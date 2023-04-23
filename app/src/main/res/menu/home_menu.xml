@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/setting"
+            android:title="الاعدادات" />
+
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/about"
+            android:title="حول التطبيق" />
+
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/exit"
+            android:title="الخروج" />
+    </group>
+
+</menu>

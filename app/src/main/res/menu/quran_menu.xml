@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:title="searche"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/more"
+        android:title=""
+        android:icon="@drawable/more"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/save_tag"
+                android:orderInCategory="100"
+                android:title="حفظ علامة"
+                android:icon="@drawable/save"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/move_to_tag"
+                android:orderInCategory="100"
+                android:title="انتقال الي علامة"
+                android:icon="@drawable/save"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/quran_index"
+                android:orderInCategory="100"
+                android:title="الفهرس"
+                android:icon="@drawable/index"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/quran_jozza"
+                android:orderInCategory="100"
+                android:title="الأجزاء"
+                android:icon="@drawable/parts"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/seal_prayer"
+                android:orderInCategory="100"
+                android:title="دعاء الختم"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/prayer"/>
+
+        </menu>
+    </item>
+
+
+</menu>

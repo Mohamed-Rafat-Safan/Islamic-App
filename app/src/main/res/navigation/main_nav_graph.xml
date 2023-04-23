@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.myislamicapp.ui.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/main_nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myislamicapp.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_quranContainerFragment"
+            app:destination="@id/quranContainerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_azkarHomeFragment"
+            app:destination="@id/azkarHomeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_prayersTimeFragment"
+            app:destination="@id/prayersTimeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_rosaryFragment"
+            app:destination="@id/rosaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quranContainerFragment"
+        android:name="com.example.myislamicapp.ui.quran.quranContainer.QuranContainerFragment"
+        android:label="fragment_quran_container"
+        tools:layout="@layout/fragment_quran_container" >
+        <action
+            android:id="@+id/action_quranContainerFragment_to_indexAndJozzaFragment"
+            app:destination="@id/indexAndJozzaFragment" />
+        <action
+            android:id="@+id/action_quranContainerFragment_to_doaaQuranEndFragment"
+            app:destination="@id/doaaQuranEndFragment" />
+        <action
+            android:id="@+id/action_quranContainerFragment_to_quranSearchFragment"
+            app:destination="@id/quranSearchFragment" />
+        <action
+            android:id="@+id/action_quranContainerFragment_self"
+            app:destination="@id/quranContainerFragment"
+            app:popUpTo="@id/quranContainerFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="selectedPageStart"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/indexAndJozzaFragment"
+        android:name="com.example.myislamicapp.ui.quran.indexAndJozza.IndexAndJozzaFragment"
+        android:label="fragment_index_and_jozza"
+        tools:layout="@layout/fragment_index_and_jozza" >
+        <action
+            android:id="@+id/action_indexAndJozzaFragment_to_quranContainerFragment"
+            app:destination="@id/quranContainerFragment"
+            app:popUpTo="@id/quranContainerFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="tapPosithion"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/doaaQuranEndFragment"
+        android:name="com.example.myislamicapp.ui.quran.DoaaQuranEndFragment"
+        android:label="fragment_doaa_quran_end"
+        tools:layout="@layout/fragment_doaa_quran_end" />
+    <fragment
+        android:id="@+id/quranSearchFragment"
+        android:name="com.example.myislamicapp.ui.quran.quranSearch.QuranSearchFragment"
+        android:label="fragment_quran_search"
+        tools:layout="@layout/fragment_quran_search" >
+        <action
+            android:id="@+id/action_quranSearchFragment_to_quranContainerFragment"
+            app:destination="@id/quranContainerFragment"
+            app:popUpTo="@id/quranContainerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/azkarHomeFragment"
+        android:name="com.example.myislamicapp.ui.azkar.azkarType.AzkarHomeFragment"
+        android:label="fragment_azkar_home"
+        tools:layout="@layout/fragment_azkar_home" >
+        <action
+            android:id="@+id/action_azkarHomeFragment_to_azkarContentFragment"
+            app:destination="@id/azkarContentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/azkarContentFragment"
+        android:name="com.example.myislamicapp.ui.azkar.azkarContent.AzkarContentFragment"
+        android:label="fragment_azkar_content"
+        tools:layout="@layout/fragment_azkar_content" >
+        <argument
+            android:name="zekrType"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/prayersTimeFragment"
+        android:name="com.example.myislamicapp.ui.prayersTime.PrayersTimeFragment"
+        android:label="fragment_prayers_time"
+        tools:layout="@layout/fragment_prayers_time" />
+    <fragment
+        android:id="@+id/rosaryFragment"
+        android:name="com.example.myislamicapp.ui.rosary.RosaryFragment"
+        android:label="fragment_rosary"
+        tools:layout="@layout/fragment_rosary" />
+</navigation>
