@@ -3,6 +3,7 @@ An Islamic application that contains more than one feature [the Holy Quran, dhik
 Used in this application:
 Room Database
 retrofit
+SharedPreferences 
 coroutines
 MVVM design pattern
 Notification
