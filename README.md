@@ -1,5 +1,5 @@
 # Islamic-App
-An Islamic application that contains more than one feature [the Holy Quran, dhikr, prayer times, electronic rosary]
+An Islamic application that contains more than one feature [Quran, Azkar, prayer times, electronic rosary]
 Used in this application:
 Room Database
 retrofit
