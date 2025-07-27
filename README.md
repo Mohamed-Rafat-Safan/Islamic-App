@@ -5,6 +5,7 @@ Used in this application:
  - retrofit <br>
  - SharedPreferences <br>
  - coroutines <br>
+ - WorkManager <br>
  - MVVM design pattern <br>
  - Notification <br> 
  - Dealing with Gson files <br>
